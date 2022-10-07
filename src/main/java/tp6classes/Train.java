@@ -2,8 +2,18 @@ package tp6classes;
 /*Class principale*/
 public class Train {
     //Attributs
-    int vitesse = 0;
-    boolean enMarche = false;
+    private int vitesse = 0;
+    private boolean enMarche = false;
+
+    public int getVitesse(){
+        return vitesse;
+    }
+    public void setVitesse(int uneVitesse){
+        vitesse = uneVitesse;
+    }
+    public void setEnMarche(boolean unEtat){
+        enMarche = unEtat;
+    }
 
     //Méthodes
     public static void demarrer(){
